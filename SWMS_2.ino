@@ -60,7 +60,7 @@ void loop() {
 
   // Read the soil moisture level
   int soilMoistureValue = analogRead(SOIL_MOISTURE_PIN);
-  float soilMoisturePercent = map(soilMoistureValue, 1023, 0, 0, 100);
+  float soilMoisturePercent = map(soilMoistureValue, 620, 215, 0, 100);
 
   // Print the values to the Serial Monitor
 Serial.print("Humidity: ");
